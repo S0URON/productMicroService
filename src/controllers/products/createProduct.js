@@ -6,7 +6,7 @@ export async function createProduct(req, res) {
         const newProduct = {
             _id: new mongoose.Types.ObjectId(),
             name: req.body.name,
-            desctiption: req.body.desctiption,
+            description: req.body.description,
             category_id: mongoose.Types.ObjectId(req.body.category_id),
             price: req.body.price,
             createdAt: new Date(),

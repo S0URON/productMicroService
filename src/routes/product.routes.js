@@ -12,7 +12,7 @@ const routes = new Router();
 routes.get('', getProductsCtrl.getProducts);
 routes.get('/:id', getProductByIdCtrl.getProductById)
 routes.delete('/:id', deleteProductCtrl.deleteProduct)
-routes.patch('/:id', editProductCtrl.editProduct)
+routes.put('/:id', editProductCtrl.editProduct)
 routes.post('', createProductCtrl.createProduct)
 
 
